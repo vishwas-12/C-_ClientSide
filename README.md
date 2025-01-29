@@ -12,3 +12,5 @@ Start the server by running **node main.js**, which will start the mock exchange
 Open ClientSide.cpp in any code editor and run :**g++ -o client ClientSide.cpp -lws2_32**
 Now, access your directory via the terminal and run the executable i.e: **client.exe**
 You can observe the **missed sequence number being listed on the terminal** as well as parsed output being saved in a json file.
+![image](https://github.com/user-attachments/assets/4ffc2ea8-3e54-4e14-94e7-93ebcadde39d)
+
