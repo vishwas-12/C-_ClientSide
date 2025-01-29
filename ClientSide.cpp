@@ -84,8 +84,6 @@ void requestResendPacket(SOCKET socketFD, int32_t sequenceNumber, json1 &jsonArr
         std::cerr << "Error receiving resent packet: " << WSAGetLastError() << '\n';
     }
 }
-
-// Main function for the program
 int main()
 {
     cout << "started" << endl;
@@ -175,8 +173,6 @@ int main()
             closesocket(socketFD);
         }
     }
-
-    // Save JSON to a file
     std::ofstream outFile("output.json");
     if (outFile.is_open())
     {
