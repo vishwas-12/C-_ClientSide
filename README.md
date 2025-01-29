@@ -1,16 +1,43 @@
-This project is a C++ application that connects to a server over TCP using Winsock2 to receive financial trade packets in real-time. 
-The application:
-Receives and Parses Packets: Captures binary trade data, extracts fields (symbol, price, quantity, etc.), and converts them into a structured format.
-Handles Missing Packets: Detects missing sequence numbers and requests retransmission from the server.
-Stores Data as JSON: Converts received packets into JSON format and saves them in output.json for further analysis.
-Uses Winsock2 for Networking: Implements TCP-based communication to fetch trade data from a remote server.
-This tool is useful for market data processing, network packet analysis, and real-time financial applications.
+# 📡 Real-Time Trade Data Client (C++ with Winsock2)
 
-To run the application:
-Clone the repository.
-Start the server by running **node main.js**, which will start the mock exchange server.
-Open ClientSide.cpp in any code editor and run :**g++ -o client ClientSide.cpp -lws2_32**
-Now, access your directory via the terminal and run the executable i.e: **client.exe**
-You can observe the **missed sequence number being listed on the terminal** as well as parsed output being saved in a json file.
-![image](https://github.com/user-attachments/assets/4ffc2ea8-3e54-4e14-94e7-93ebcadde39d)
+This C++ application connects to a server over **TCP using Winsock2** to receive **financial trade packets** in real-time.  
+It processes trade data, handles missing packets, and stores structured JSON output for further analysis.
 
+---
+
+## ✨ Features  
+
+✅ **Receives and Parses Packets**  
+- Captures binary trade data from the server.  
+- Extracts key fields (**symbol, price, quantity, sequence number, etc.**).  
+- Converts the raw packet data into a structured format.  
+
+✅ **Handles Missing Packets**  
+- Detects missing sequence numbers.  
+- Requests retransmission from the server for lost packets.  
+
+✅ **Stores Data as JSON**  
+- Converts received packets into a **JSON format**.  
+- Saves the structured data into `output.json` for further processing.  
+
+✅ **Uses Winsock2 for Networking**  
+- Implements **TCP-based** communication to fetch trade data from a remote server.  
+- Uses Winsock2 for seamless and efficient data transfer.  
+
+---
+
+## 🛠 Setup and Installation  
+
+### **Clone the Repository**  
+```sh
+git clone https://github.com/your-repo/C-_ClientSide.git
+cd C-_ClientSide
+```
+### **Compile CPP Client**  
+```sh
+g++ -o client ClientSide.cpp -lws2_32
+```
+### **Run Client Application via terminal**  
+```sh
+client.exe
+```
