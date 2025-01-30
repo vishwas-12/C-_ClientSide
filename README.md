@@ -30,8 +30,7 @@ It processes trade data, handles missing packets, and stores structured JSON out
 
 ### **Clone the Repository**  
 ```sh
-git clone https://github.com/your-repo/C-_ClientSide.git
-cd C-_ClientSide
+git clone https://github.com/your-repo/TradeDataClient.git
 ```
 ### **Compile CPP Client**  
 ```sh
